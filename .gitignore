@@ -1,0 +1,16 @@
+# Ignore large files
+*.tar.gz
+*.tar
+*.zip
+*.rar
+*.7z
+*.gz
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.iso
+*.dmg
+
+# Ignore large directories
+*/data
