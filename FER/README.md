@@ -2,11 +2,18 @@
 This folder is used to train and evaluate the performance of different models for different datasets for flipping error regularization and standard training without regularization. 
 
 ### Conda Environment
- `pytorch` conda enviroment was used which can be activated using the following command:
+ You need to create a new conda environment using:
 ```
-conda activate pytorch
+conda create -n fer python=3.8.18
 ```
-All the required libraries to run the code is available in this environment.
+ Then activate `fer` environment:
+```
+conda activate fer
+```
+And install the required libraries:
+```
+pip install -r requirements.txt
+```
 
 ### Train
 You can use the following command to train a ResNet18 model on the CIFAR-100 dataset using FER
