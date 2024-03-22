@@ -34,7 +34,7 @@ python train.py --model ResNeXt --kd_T 5 -s 7 --mu 1.0 -i 2 --dataset cifar100
 ```
 To train using Kyle's regularization approach, use the following command with a specified -b beta value:
 ```
-python ktrain.py --model ResNet18 --kd_T 5 -s 7 --mu 1.0 -i 2 --dataset -b 1.0 cifar100
+python ktrain.py --model ResNet18 --kd_T 5 -s 7 --mu 1.0 -i 2 -b 1.0 --dataset cifar100
 ```
 To train using Justin's approach, use the following command:
 ```
