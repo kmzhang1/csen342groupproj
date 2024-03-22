@@ -41,7 +41,7 @@ def parse_option():
     parser.add_argument('-s', '--seed', type=int, default=1, help='random seed') # in most experiments, seeds 1,5, 7 are used
 
     # dataset
-    parser.add_argument('--model', type=str, default='ResNet18', choices=['wrn_40_2', 'MobileNetV2', 'ShuffleV2', 'ResNet18', 'Efficient'])
+    parser.add_argument('--model', type=str, default='ResNet18', choices=['GoogleNet','ResNeXt','wrn_40_2', 'MobileNetV2', 'ShuffleV2', 'ResNet18', 'Efficient'])
 
     parser.add_argument('--dataset', type=str, default='cifar100', choices=['cifar100', 'stanford', 'tiny'], help='dataset')
     
