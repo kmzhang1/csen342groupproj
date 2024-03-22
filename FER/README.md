@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ### Train
 You can use the following command to train a model on the CIFAR-100 dataset using FER. Change the --model parameter to train on the other models and change the --dataset parameter to train on other datasets:
 ```
-python train.py --model ResNet18 --kd_T 5 -s 7 --mu 1.0 -i 2 --dataset cifar100
+python train.py --model ResNet18 --kd_T 5 -s 7 --mu 1.0 -i 1 --dataset cifar100
 ```
 Similarly, models can be trained using standard training without regularization by choosing parameter -i to be 240:
 ```
@@ -26,19 +26,19 @@ python train.py --model ResNet18 --kd_T 5 -s 7 --mu 1.0 -i 240 --dataset cifar10
 ```
 To train using Sari's EfficientNet model, use the following command:
 ```
-python train.py --model Efficient --kd_T 5 -s 7 --mu 1.0 -i 2 --dataset cifar100
+python train.py --model Efficient --kd_T 5 -s 7 --mu 1.0 -i 1 --dataset cifar100
 ```
 To train using Juan's ResNeXt model, use the following command:
 ```
-python train.py --model ResNeXt --kd_T 5 -s 7 --mu 1.0 -i 2 --dataset cifar100
+python train.py --model ResNeXt --kd_T 5 -s 7 --mu 1.0 -i 1 --dataset cifar100
 ```
 To train using Kyle's regularization approach, use the following command with a specified -b beta value:
 ```
-python ktrain.py --model ResNet18 --kd_T 5 -s 7 --mu 1.0 -i 2 -b 1.0 --dataset cifar100
+python ktrain.py --model ResNet18 --kd_T 5 -s 7 --mu 1.0 -i 1 -b 1.0 --dataset cifar100
 ```
 To train using Justin's approach, use the following command:
 ```
-python jtrain.py --model ResNet18 --kd_T 5 -s 7 --mu 1.0 -i 2 --dataset cifar100
+python jtrain.py --model ResNet18 --kd_T 5 -s 7 --mu 1.0 -i 1 --dataset cifar100
 ```
 
 ### Test
