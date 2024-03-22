@@ -24,9 +24,13 @@ Similarly, models can be trained using standard training without regularization 
 ```
 python train.py --model ResNet18 --kd_T 5 -s 7 --mu 1.0 -i 240 --dataset cifar100
 ```
-To train using Sari's EfficientNet model, use the following command with a specified -b beta value:
+To train using Sari's EfficientNet model, use the following command:
 ```
-python ktrain.py --model Efficient --kd_T 5 -s 7 --mu 1.0 -i 2 --dataset -b 1.0 cifar100
+python train.py --model Efficient --kd_T 5 -s 7 --mu 1.0 -i 2 --dataset cifar100
+```
+To train using Juan's ResNeXt model, use the following command:
+```
+python train.py --model ResNeXt --kd_T 5 -s 7 --mu 1.0 -i 2 --dataset cifar100
 ```
 To train using Kyle's regularization approach, use the following command with a specified -b beta value:
 ```
